@@ -2,8 +2,8 @@
   become: True
   tasks:
     - name: Install packages
-      apt:
-        name: apache2
+      yum:
+        name: httpd
         state: present
     - name: Start Apache server
       service:
